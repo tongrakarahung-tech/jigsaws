@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+#original-image-container {
+    margin-bottom: 30px; /* เว้นระยะห่างด้านล่าง */
+}
+
+#original-image {
+    width: 200px; /* หรือขนาดที่คุณต้องการ เช่น 200px */
+    height: auto; /* รักษาอัตราส่วนของภาพ */
+    border: 2px solid #555;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: block; /* ทำให้จัดกึ่งกลางได้ง่ายขึ้น */
+    margin: 10px auto; /* จัดกึ่งกลาง */
+}
+
+#jigsaw-container {
+    width: 600px; 
+    height: 900px; 
+    margin: 20px auto;
+    
+    display: grid;
+    
+    border: 3px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.piece {
+    background-image: url('851211.jpg'); 
+    background-size: 600px 900px; 
+    cursor: pointer;
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+    transition: transform 0.1s ease-out; 
+}
+
+.selected {
+    border: 3px solid red !important;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    z-index: 10; 
+    transform: scale(1.02);
+}
+
+#shuffle-button {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#shuffle-button:hover {
+    background-color: #45a049;
+}
